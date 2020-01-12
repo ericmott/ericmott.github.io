@@ -1,0 +1,16 @@
+ul {
+    list-style: none;
+}
+ul a {
+    background-color: steelblue;
+    color: white;
+    display: inline-block;
+    margin: 2px;
+    padding: 2px;
+    text-decoration: none;
+    width: 80%;
+}
+
+h1 {
+    color: steelblue;
+}
