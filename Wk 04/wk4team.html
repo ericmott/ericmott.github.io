@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #tic-tac-toe {
+            width: 315px;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 100px;
+            font-size: 90px;
+        }
+        #upper-left {
+            width: 100px;
+            height: 100px;
+        }
+        #upper-middle {
+            width: 100px;
+            height: 100px;
+            border-left: solid black;
+            border-right: solid black;
+        }
+        #upper-right {
+            width: 100px;
+            height: 100px;
+        }
+        #middle-left {
+            width: 100px;
+            height: 100px;
+            border-top: solid black;
+            border-bottom: solid black;
+        }
+        #middle-middle {
+            width: 100px;
+            height: 100px;
+            border: solid black;
+        }
+        #middle-right {
+            width: 100px;
+            height: 100px;
+            border-top: solid black;
+            border-bottom: solid black;
+        }
+        #lower-left {
+            width: 100px;
+            height: 100px;
+        }
+        #lower-middle {
+            width: 100px;
+            height: 100px;
+            border-left: solid black;
+            border-right: solid black;
+        }
+        #lower-right {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id='tic-tac-toe'>
+        <div id='upper-left'></div>
+        <div id='upper-middle'></div>
+        <div id='upper-right'></div>
+        <div id='middle-left'></div>
+        <div id='middle-middle'></div>
+        <div id='middle-right'></div>
+        <div id='lower-left'></div>
+        <div id='lower-middle'></div>
+        <div id='lower-right'></div>
+        <button type='button' onclick='reset()'>Reset Board</button>
+    </div>
+</body>
+<script>
+    // list of all the divs
+    let squares = document.getElementsByTagName('div');
+    console.log(squares);
+
+    // variable to keep track of who's turn it is
+    let playerTurn = 'X';
+
+    // variable to keep to tell if it is empty
+
+    // attach touchend to all the divs
+    for(let i = 1; i <= 9; i++) {
+        squares[i].addEventListener('touchend', () => {
+            if(playerTurn === 'X') {
+                squares[i].innerHTML = 'X';
+                playerTurn = 'O';
+            } else {
+                squares[i].innerHTML = 'O';
+                playerTurn = 'X';
+            }
+        });
+    }
+
+    function reset() {
+        location.reload();
+    }
+</script>
+</html>
