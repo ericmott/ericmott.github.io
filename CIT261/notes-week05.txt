@@ -1,0 +1,53 @@
+First off, I am trying something new.  I am embedding my notes this week to see if I can do it.  If you’re reading this, then it worked!  I am very slowly starting to get things organized.  I’m not as far along on my project as I would like to be, but I am working on it.
+Some of my reading notes.  I’m sure I will have to reformat this a few times.  I don’t think I can simply copy and paste my Word doc as a text file and have it work.  Who knows?
+Testing and Debugging
+* 3 types of errors
+o System Error – there is a problem with the program interacting with the system or external devices
+o Programmer Error – there is a problem with the program, faulty logic or typo
+o User Error – user has entered bad data
+* Exception
+o Error that produces an return value that can be used by the program to deal with the error.
+* Stack Traces
+o The sequence of functions or methods leading up to the error.
+* Warnings
+o An error that doesn’t cause the program to crash
+* Strict Mode
+o Produces more errors and warnings
+o Prohibits use of depreciated features
+o To use Strict Mode, add the following to the first line
+* ‘use strict’;
+o Can be used inside a function.  Then it applies only to the function.  Make the first line in function
+* Linting Tools
+o Checks for good programming practices
+* Feature Detection
+o Used to determine what browser is being used
+o Browser sniffing is not recommended 
+* Trusty Alert
+o Discouraged to use for debugging
+* Console
+o Used to log information out for the user to view
+* Debugging Tools
+o Most browsers have debugging tools built in.
+o debugger is the keyword – creates a breakpoint in the code.  You can hover over variables to see their current values
+* Error Objects
+o Created when an exception occurs
+* Throwing Exceptions
+o Allows you to deal with an error promptly
+o Custom messages can be created stating what happened
+* Exception Handling
+o Try
+o Catch
+o Finally
+* Tests
+
+
+
+
+Questions for Weekly Call:
+1. Explain the last ‘use strict’ example on page 356.
+a. (function() {
+‘use strict’;
+
+// All your code would go inside this function
+}());
+2. 

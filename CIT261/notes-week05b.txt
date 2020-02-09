@@ -1,0 +1,8 @@
+Well, that worked pretty good.  The apostrophes seem to not work to well.  I will test to see if I can get them to show.
+
+Test:
+I\'ll see if the apostrophe is or is\'nt here.
+
+If it\'s there, than using the backslach worked.  If not, then I\'ll have to see how to make it work.  For now, that\'s good enough.  I need to work on my Todo project now.
+
+Ha! It looks like the question marks in the black diamond are a remnant of saving my Word doc.  The apostrophes seem to work without the backslash.  So I don't need to add it after all.  Whew!!!

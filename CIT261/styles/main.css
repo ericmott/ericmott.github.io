@@ -1,5 +1,40 @@
 body {
-    background-color: rgb(5,9,68);
+    background-color: slategray;
+}
+header {
+    background-color: rgb(5, 9, 68);
+    color: white;
+    padding: 1px;
+}
+header h1 {
+    text-align: center;
+}
+main {
+    background-color: rgb(5, 9, 68);
+    color: white;
+    padding: 1px;
+}
+footer {
+    background-color: rgb(5, 9, 68);
+    color: white;
+    padding: 1px;
+}
+nav ul {
+    list-style: none;
+    padding: 15px;
+}
+nav li {
+    padding-right: 7px;
+}
+nav ul a {
+    background-color: slategray;
+    color: white;
+    display: inline-block;
+    margin: 2px;
+    padding: 2px;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 5px;
 }
 button {
     border-radius: 6px;
@@ -42,20 +77,54 @@ ul a {
     border-radius: 5px;
 }
 
-.link-white {
-    color: white;
-    text-decoration: none;
-}
-.main-menu {
-    text-decoration: none; /* **** *** Add HOVER effects *** **** */
-}
-.font-wht {
+/* *** Standard color combinations *** */
+.blu-wht {
+    background-color: rgb(5, 9, 68);
     color: white;
 }
-.font-blk {
+.gry-blk {
+    background-color: lightgray;
     color: black;
 }
+/* *********************************** */
+
+/* *** Text Colors *** */
+.txt-wht {color: white;}
+.txt-blk {color: black;}
+.txt-blu {color: rgb(5, 9, 68);}
+/* ******************* */
+
+/* *** Text Alignment *** */
+.txt-center {text-align: center;}
+.txt-left {text-align: left;}
+.txt-right {text-align: right;}
+/* ********************** */
+
+
+/* *** Font Styles *** */
 .font-papyrus-center {
     font-family: papyrus;
     text-align: center;
+}
+/* ******************* */
+
+.margin-zero {
+    margin: 0px;
+}
+.notes {
+    background-color: lightgray;
+    color: black;
+    padding: 5px;
+    width: 97%;
+    height: 170px;
+    border-radius: 10px;
+}
+.note-div {
+    padding: 10px;
+}
+
+@media screen and (max-width: 430px){
+    h1 {
+        font-size: 25px;
+    }
 }
