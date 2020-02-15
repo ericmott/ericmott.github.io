@@ -1,6 +1,7 @@
 <!-- This page is optimized for the iPhone 8 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <title>Todo List</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
     <header>
         <h1>Todo List</h1>
@@ -20,9 +22,42 @@
             <hr>
         </nav>
     </header>
-    
+
     <main>
-                
+        <div>
+            <table id="todo-table">
+                <thead>
+                    <h1 class="txt-center">ToDo List</h1>
+                    <tr>
+                        <th>Done</th>
+                        <th>Task</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div id="new-task">
+            <div>
+                <h2 class="txt-center">New Task</h2>
+            </div>
+            <form action="">
+                <div>
+                    <label for="task">Task: </label>
+                    <input type="text" id="task">
+                </div>
+                <div>
+                    <input type="button" id="btn-addItem" value="Add Task" onclick="addItem()">
+                </div>
+            </form>
+        </div>
+
     </main>
     <footer>
         <hr>
@@ -30,6 +65,8 @@
             <p style="margin-left:10px;">&copy; Eric Mott, 2020</p>
         </div>
     </footer class="blu-wht">
+    <script src="scripts/todo.js" type="module"></script>
+    <script src="scripts/todoItem.js" type="module"></script>
 </body>
 
 </html>

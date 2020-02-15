@@ -1,5 +1,6 @@
 body {
     background-color: slategray;
+    width: auto;
 }
 header {
     background-color: rgb(5, 9, 68);
@@ -123,8 +124,34 @@ ul a {
     padding: 10px;
 }
 
+#new-task {
+    margin: 15px;
+    padding: 5px;
+    background-color: darkslategray;
+    border-radius: 10px;
+    border: rgb(209, 10, 10);
+    border-style: solid;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    
+    
+}
+
+#todo-table {
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+}
+
+
 @media screen and (max-width: 430px){
     h1 {
         font-size: 25px;
+    }
+
+    nav {
+        width: 100%;
     }
 }
