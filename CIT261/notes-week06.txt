@@ -1,0 +1,10 @@
+This week was challenging for me.  The weekly office hour was very beneficial to help me figure out how to delete an item from the ToDo list.
+
+I was excited to figure out how to put a check box in my table.  It took a while, but I finally figured out how to read whether the checkbox was checked or not.  I then figured out how to change and save changes in the checkbox.  This was challenging and took more time than I would have liked.
+
+I still have more styling to do in order to clean up the overall look.
+
+
+Questions for Weekly Call:
+1. How do I add a .png file as a button inside a table?  I want to have a red "X" as my delete button to remove items from my ToDo List.
+2. How do I make my fields inside the table links so I can click on the field and edit it and then have it save in memory?

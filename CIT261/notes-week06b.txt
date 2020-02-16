@@ -1,0 +1,28 @@
+Create a checkbox and add an event listener to detect when the checkbox was selected:
+
+ // *** create checkbox in table ***
+            let tdChkBox = document.createElement('input');
+            tdChkBox.type = "checkbox";
+            tdChkBox.name = "completed";
+            tdChkBox.id = "completed";
+            tdChkBox.checked = todoItem.completed;
+            tdChkBox.addEventListener('click', toggleCheck.bind(null, todoItem), false);
+			
+How to check whether the checkbox is checked or not:
+
+function toggleCheck(todoItem) {
+
+    /* Toggle checkbox in memory */
+    if (todoItem.completed) {
+        todoItem.completed = false;
+    } else {
+        todoItem.completed = true;
+    }
+
+    /* save to local storage */
+    saveTodoItems(todoItems);
+
+    /* fill table */
+    loadTodoItems();
+}
+
