@@ -1,0 +1,74 @@
+Immediately Invoked Function Expressions (IIFE) - pronounced "iffy"
+    1. The function is evoked immediately after being defined.
+    2. Variables stay within the function and die at the end of the function.
+
+Memoization
+    1. Caches functions results.  If function call with the same parameters, the cache is retrieved. This saves time from having to run the function.
+
+Temp Variables
+    1. Variables can be contained within a block.
+    2. Variables do not exist outside of the block - block scope.
+
+Strict Mode
+    1. Need to review - Chapter 10 in N2N.
+
+Self-Contained Code Blocks
+    1. Useful for testing purposes.
+    2. Allows different blocks to run independently of each other.
+    3. Variable of the same name won't interfere with each other (block scope).
+
+Dynamic Function - Redefine/Rewrite itself
+    1. Create a variable with the same name as the function with in the function.
+    2. Set the variable equal to an anonymous function.
+    3. That anyonymous function changes or becomes the original function when when the original function is called again.
+
+Lazy Definition Pattern
+    1. See page 397 of N2N.
+	
+AJAX
+	1. Allows asynchronous communication.
+	2. Used for dynamic web pages.
+	3. Allows JavaScript to request resources from the server on behalf of the client.
+		a. Usually small fragments of text or HTML rather than entire page.
+		
+Fetch API
+	1. Requests from another website.
+	
+Response Interface
+	1. Deals with the object that is returned when a promise is fulfilled.
+	2. Responses
+		200 - response succeful
+		201 - a resource was created
+		204 - successful, but no content returned
+		ok property will return is between 200 and 299
+		404 - page not found (still considered a successful request)
+		
+Request Interface
+	1. Request objects are created using the Request() constructor and include the following properties:
+		a. url - The URL of the requested resource (the only property that is required).
+		b. method - specifies which HTTP method to use.  Default is GET.
+		c. headers - provides details of the request's headers.
+		d. mode - allows you to specify if CORS is used or not. CORS is enabled by default.
+		e. cache - specifies how to use the browser's cache.
+		f. credentials - specifies if cookies are allowed with the request.
+		g. redirect - what to do if the response is a redirect.
+			i. follow - redirect is followed
+			ii. error - an error is thrown
+			iii. manual - user has to click on a link to follow the redirect
+	
+Headers Interface
+	1. Used to pass additional information about a request or response.
+	2. Typical information in headers
+		a. file-type of the resource
+		b. cookie information
+		c. authentication information
+		e. when resource was last modified
+
+Things to look into:
+    1. How to make the menu list a drop-down.  It's getting a little long on the page.
+
+
+
+Questions for Weekly Call:
+1. How do I add a .png file as a button inside a table?  I want to have a red "X" as my delete button to remove items from my ToDo List.
+2. How do I make my fields inside the table links so I can click on the field and edit it and then have it save in memory?

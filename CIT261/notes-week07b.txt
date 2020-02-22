@@ -1,0 +1,50 @@
+Week 07 code snipets.
+
+Memoization:
+    function square(x){
+        square.cache = square.cache || {};
+        if (!square.cache[x]) {
+            square.cache[x] = x*x;
+        }
+        return square.cache[x]
+    }
+
+    square(3);
+    << 9
+
+    square(-11);
+    << 121
+
+    square.cache;
+    << {"3": 9, "-11": 121}
+
+Swapping Variables: (Could be very handy)
+    let [a,b] = [1,2];
+    [a,b] = [b,a];
+
+    a;
+    << 2
+
+    b;
+    << 1
+	
+Fetch
+	fetch('https:://example.com/data')
+	.then( // code that handles teh response )
+	.catch( // code that runs if the server returns an error )
+	
+Us if block to check if request was successful
+	const url = 'https.example.com/data';
+	
+	fetch(url)
+	.then(response) => {
+	if(response.ok) {
+	return response;
+	}
+	throw Error(response.statusText);
+	})
+	.then( response => // do something with response )
+	.catch ( error => console.log('There was an error!') )
+	// the statusText corresponds to the code returned
+	// for example, "Forbidden" for code 403
+	
