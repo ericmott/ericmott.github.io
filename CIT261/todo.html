@@ -13,7 +13,6 @@
 <body>
     <header>
         <h1>Todo List</h1>
-        <h4>Under Construction...</h4>
         <hr>
         <nav>
             <ul>
@@ -30,9 +29,9 @@
                 <thead>
                     <h1 class="txt-center">ToDo List</h1>
                     <tr>
-                        <th>Done</th>
-                        <th>Task</th>
-                        <th>Delete</th>
+                        <th class="done">Done</th>
+                        <th class="task">Task</th>
+                        <th class="delete">Delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -44,11 +43,11 @@
                 </tfoot>
             </table>
         </div>
-        <div id="new-task">
+        <div>
             <div>
                 <h2 class="txt-center">New Task</h2>
             </div>
-            <form action="">
+            <form action="" id="form-newTask">
                 <div>
                     <label for="task">Task: </label>
                     <input type="text" id="task">
