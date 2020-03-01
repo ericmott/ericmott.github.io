@@ -1,0 +1,66 @@
+Transforms
+    You can use transforms to manipulate items on the page.  You can move, rotate, scale and skew them.  This can be done using the various html tags.
+    1. Translate
+        transform: translate(45px, -45px); // +right/-left, +down/-up
+        transform: translateX(45px) // x-axis only
+        transform: translateY(45px) // y-axis only
+    2. Rotate
+        transform: scale(1.5, 0.25) // scale(x-axis, y-axis)
+        transform: scaleX(1.5) // x-axis only
+        transform: scaleY(1.5) // y-axis only
+    3. Scale
+        transform: rotate(10deg) // rotates clockwise
+    4. Skew
+        transform: skew(15deg, 4deg)
+    *Pay attention to the order of transforms.  Order does matter.  Rotate followed by translate will move on a rotated axis.  Translate followed by rotate will move then rotate.
+
+Transitions
+    1. Defined using CSS.
+    2. transition-property defines the CSS properties of the element that should be transitioned.
+    3. transition-duration defines the amount of time to perform the transition.  Not all things can have a duration.
+    4. transition-delay defines how long until the transition starts.  This is good to prevent a transition when just moving across the element, rather than staying on (hovering) on the element.
+    5. You can have multiple transitions defined for an element.
+    6. Some things you can transition:
+        a. Color
+        b. transparency
+        c. translate
+        
+Animations
+Use hover to apply style when hovering over the field.
+
+Canvas
+    Canvas is used to drawing shapes, lines, colors, pretty much anything.
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d"); // 2d used for drawing in 2 dimensions
+            The object returned is an instance of CanvasRenderingContext2D.  AKA - the context object
+    1. strokeStyle
+    2. fillStyle
+        context.strokeStyle = "red"; // sets teh stroke border
+        context.fillStyle = "blue"; //sets the stroke or fill color
+        context.fillStyle = "rgba(0, 0, 255, 0.5)"; // blue fill with a 50% opacity
+        context.fillRect(10, 10, 100, 100); // start at 10px from top and left, end at 100px to the right and down
+        context.strokeRect(10, 10, 100, 100); // start at 10px from top and left, end at 100px to the right and down
+    3. Coordinate System
+        x-axis is positive going to the right
+        y-axis is positive going down
+    4. CanvasPattern
+        Putting an image into the canvas
+            function drawPattern() {
+                var canvas = document.getElementById("demo2");
+                var context = canvas.getContext("2d");
+                context.strokeStyle = "red";
+
+                var img = new Image();
+                img.src = "../images/bg-bike.png"; // starts downloading the image
+                img.onload = function() { // us onload to create the pattern after the file has downloaded
+                    var pattern = context.createPattern(img, "repeat");
+                    context.fillStyle = pattern;
+                    context.fillRect(10, 10, 100, 100);
+                    context.strokeRect(10, 10, 100, 100);
+                };
+            }
+
+
+Questions for Weekly Call:
+1. How do I add a .png file as a button inside a table?  I want to have a red "X" as my delete button to remove items from my ToDo List.
+2. How do I make my fields inside the table links so I can click on the field and edit it and then have it save in memory?

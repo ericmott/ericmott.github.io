@@ -1,0 +1,25 @@
+Week 08 code snipets.
+
+Using Canvas - draw a rectangle with a red border and blue 50% opacity fill
+    var canvas = document.getElementById("myCanvas"); // grab hold of the canvas element on the page
+    var context = canvas.getContext("2d"); // define as a 2-d drawing
+    context.strokeStyle = "red"; // sets teh stroke border
+    context.fillStyle = "rgba(0, 0, 255, 0.5)"; // blue fill with a 50% opacity
+    context.fillRect(10, 10, 100, 100); // start at 10px from top and left, end at 100px to the right and down
+    context.strokeRect(10, 10, 100, 100); // start at 10px from top and left, end at 100px to the right and down
+
+Putting an image into the canvas
+    function drawPattern() {
+        var canvas = document.getElementById("demo2");
+        var context = canvas.getContext("2d");
+        context.strokeStyle = "red";
+
+        var img = new Image();
+        img.src = "../images/bg-bike.png"; // starts downloading the image
+        img.onload = function() { // us onload to create the pattern after the file has downloaded
+            var pattern = context.createPattern(img, "repeat");
+            context.fillStyle = pattern;
+            context.fillRect(10, 10, 100, 100);
+            context.strokeRect(10, 10, 100, 100);
+        };
+    }
