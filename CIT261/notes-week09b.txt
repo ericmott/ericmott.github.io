@@ -1,0 +1,27 @@
+Week 09 code snipets.
+
+Regular Expressions
+	Ways to write/define:
+		let re1 = new RegExp(“abc”);
+		let re2 = /abc/;
+		
+	Use backslash for special characters
+		let eighteenPlus = /eighteen\+/;
+
+Methods in Regular Expressions
+	Test - Returns a boolean based on whether or not the string contains a match of the pattern in the expression.
+		console.log(/abc/.test("abcde"));
+		// -> true
+		console.log(/abc/.test("abxde"));
+		// -> false
+
+Sets of Characters
+	Use a hyphen to show a range.
+		console.log(/[0123456789]/.test(in "1992"));
+		// -> true
+		console.log(/[0-9]//.test(*in 1992"));
+		// -> true
+		
+
+
+
