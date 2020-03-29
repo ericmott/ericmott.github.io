@@ -1,0 +1,79 @@
+<!-- This page is optimized for the iPhone 8 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Med Details</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medTracker.css">
+</head>
+
+<body>
+    <header>
+        <h1>Med Tracker</h1>
+        <hr>
+    </header>
+
+    <main>
+        <div>
+            <h2>Medication Details</h2>
+        </div>
+        <div>
+            <form action="" id="form-newMed">
+                <div>
+                    <!-- <label for="medication">Medication: </label> -->
+                    <input type="text" id="medication" value=""><br>
+                    <!-- <label for="dosage">Dosage: </label> -->
+                    <input type="text" id="dosage" value=""><br>
+                    <!-- <label for="startDate">Start Date: </label> -->
+                    <input type="date" id="startDate" value=""><br>
+                    <!-- <label for="endDate">End Date: </label> -->
+                    <input type="date" id="endDate" value=""><br>
+                    <!-- <label for="docName">Doctor's Name: </label> -->
+                    <input type="text" id="docName" value=""><br>
+                    <!-- <label for="docSpecialty">Specialty: </label> -->
+                    <input type="text" id="docSpecialty" value=""><br>
+                    <!-- <label for="docAddress1">Address: </label> -->
+                    <input type="text" id="docAddress1" value=""><br>
+                    <!-- <label for="docAddress2">Address: </label> -->
+                    <input type="text" id="docAddress2" value=""><br>
+                    <!-- <label for="docCity">City: </label> -->
+                    <input type="text" id="docCity" value=""><br>
+                    <!-- <label for="docState">State: </label> -->
+                    <input type="text" id="docState" value=""><br>
+                    <!-- <label for="docZip">Zip Code: </label> -->
+                    <input type="int" id="docZip" value=""><br>
+                    <!-- <label for="docPhone">Phone: </label> -->
+                    <input type="text" id="docPhone" value=""><br>
+                    <!-- <label for="medUsage">Treats: </label> -->
+                    <input type="text" id="medUsage" value="">
+                </div>
+                <div class="btn-addMed">
+                    <div>
+                        <input type="button" id="btn-saveItem" value="Save"> <!-- click event handled in addMed.js -->
+                    </div>
+                    <div>
+                        <input type="reset" id="btn-deleteItem" value="Delete Medication"> <!-- click event handled in addMed.js -->
+                    </div>
+                    <div>
+                        <input type="button" id="btn-projHome" value="Return To Med List"> <!-- click event handled in addMed.js -->
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <hr>
+        <div>
+            <p style="margin-left:10px;">&copy; Eric Mott, 2020</p>
+        </div>
+    </footer class="blu-wht">
+    <script src="scripts/medDetails.js" type="module"></script>
+    <!-- <script src="scripts/todoItem.js" type="module"></script> -->
+</body>
+
+</html>

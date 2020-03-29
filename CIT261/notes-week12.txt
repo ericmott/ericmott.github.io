@@ -1,0 +1,3 @@
+I was not able to obtain the API key from GoodRx.  So I changed my project such that I no longer used the API from GoodRx.
+
+I still need to cleanup my code as well as cleanup the page layouts and styling.

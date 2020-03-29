@@ -6,18 +6,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Final Project</title>
+    <title>Final Project - Med Tracker</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medTracker.css">
 </head>
 
 <body>
     <header>
-        <h1>Final Project - CIT 261</h1><h3> - under construction</h3>
+        <h1>Med Tracker</h1>
+        <h5>(Final Project - CIT 261)</h5>
         <hr>
         <nav>
             <ul>
                 <li><a href="index-cit261.html">Home</a></li>
-                <li><a href="week11.html">Return to Week 11</a></li>
+                <li><a href="week12.html">Return to Week 12</a></li>
             </ul>
             <hr>
         </nav>
@@ -25,15 +27,16 @@
 
     <main>
         <div>
-            <h1>Due to API problems, this page will be rebuilt.</h1>
-            <h3>Please return at a later date...</h3>
-            <!-- <table id="todo-table">
+            <table id="medList-table">
                 <thead>
-                    <h1 class="txt-center">ToDo List</h1>
+                    <h1 class="txt-center">Medication List</h1>
                     <tr>
-                        <th class="done">Done</th>
-                        <th class="task">Task</th>
-                        <th class="delete">Delete</th>
+                        <th class="medication">Medication</th>
+                        <th class="dose">Dose</th>
+                        <th class="startDate">Start Date</th>
+                        <!-- <th class="endDate">End Date</th>
+                        <th class="doctorName">Doctor</th>
+                        <th class="delete">Delete</th> -->
                     </tr>
                 </thead>
                 <tbody>
@@ -43,13 +46,13 @@
                     <tr>
                     </tr>
                 </tfoot>
-            </table> -->
+            </table>
         </div>
         <div>
-            <!-- <div>
-                <h2 class="txt-center">New Task</h2>
+            <div>
+                <a href="addMed.html"><input type="button" id="btn-addMed" value="Add Medication"></a>
             </div>
-            <form action="" id="form-newTask">
+            <!-- <form action="" id="form-newTask">
                 <div>
                     <label for="task">Task: </label>
                     <input type="text" id="task">
@@ -57,6 +60,7 @@
                 <div>
                     <input type="button" id="btn-addItem" value="Add Task" onclick="addItem()">
                 </div>
+                <a href="week12.html">Return to Week 12</a>
             </form> -->
         </div>
 
@@ -67,8 +71,8 @@
             <p style="margin-left:10px;">&copy; Eric Mott, 2020</p>
         </div>
     </footer class="blu-wht">
-    <script src="scripts/todo.js" type="module"></script>
-    <script src="scripts/todoItem.js" type="module"></script>
+    <script src="scripts/finalProject.js" type="module"></script>
+    <!-- <script src="scripts/todoItem.js" type="module"></script> -->
 </body>
 
 </html>

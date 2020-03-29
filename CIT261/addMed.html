@@ -1,0 +1,80 @@
+<!-- This page is optimized for the iPhone 8 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Medication</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medTracker.css">
+</head>
+
+<body>
+    <header>
+        <h1>Med Tracker</h1>
+        <h5>(Final Project - CIT 261)</h5>
+        <hr>
+    </header>
+
+    <main>
+        <div>
+            <h2 class="txt-center">Add New Medication</h2>
+        </div>
+        <div>
+            <form action="" id="form-newMed">
+                <div>
+                    <label for="medication">Medication: </label>
+                    <input type="text" id="medication"><br>
+                    <label for="dosage">Dosage: </label>
+                    <input type="text" id="dosage"><br>
+                    <label for="startDate">Start Date: </label>
+                    <input type="date" id="startDate"><br>
+                    <label for="endDate">End Date: </label>
+                    <input type="date" id="endDate"><br>
+                    <label for="docName">Doctor's Name: </label>
+                    <input type="text" id="docName"><br>
+                    <label for="docSpecialty">Specialty: </label>
+                    <input type="text" id="docSpecialty"><br>
+                    <label for="docAddress1">Address: </label>
+                    <input type="text" id="docAddress1"><br>
+                    <label for="docAddress2">Address: </label>
+                    <input type="text" id="docAddress2"><br>
+                    <label for="docCity">City: </label>
+                    <input type="text" id="docCity"><br>
+                    <label for="docState">State: </label>
+                    <input type="text" id="docState"><br>
+                    <label for="docZip">Zip Code: </label>
+                    <input type="int" id="docZip"><br>
+                    <label for="docPhone">Phone: </label>
+                    <input type="text" id="docPhone"><br>
+                    <label for="medUsage">Treats: </label>
+                    <input type="text" id="medUsage">
+                </div>
+                <div class="btn-addMed">
+                    <div>
+                        <input type="button" id="btn-addItem" value="Add Medication"> <!-- click event handled in addMed.js -->
+                    </div>
+                    <div>
+                        <input type="reset" id="btn-clearForm" value="Reset Fields"> <!-- click event handled in addMed.js -->
+                    </div>
+                    <div>
+                        <input type="button" id="btn-projHome" value="Return To Med List"> <!-- click event handled in addMed.js -->
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <hr>
+        <div>
+            <p style="margin-left:10px;">&copy; Eric Mott, 2020</p>
+        </div>
+    </footer class="blu-wht">
+    <!-- <script src="scripts/finalProject.js" type="module"></script> -->
+    <script src="scripts/addMed.js" type="module"></script>
+</body>
+
+</html>

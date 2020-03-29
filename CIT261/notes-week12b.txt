@@ -1,0 +1,10 @@
+Week 12 code snipets.
+
+How to create an OnClick for a button using JS rather than HTML.
+
+html file:
+<input type="button" id="btn-addItem" value="Add Medication">
+
+js file:
+/* this is required when using module */
+document.querySelector('#btn-addItem').addEventListener('click', addMed);

@@ -9,6 +9,11 @@ header {
 }
 header h1 {
     text-align: center;
+    margin: 0px;
+}
+header h5 {
+    text-align: center;
+    margin: 0px;
 }
 main {
     background-color: rgb(5, 9, 68);
@@ -22,7 +27,7 @@ footer {
 }
 nav ul {
     list-style: none;
-    padding: 15px;
+    padding: 0px;
 }
 nav li {
     padding-right: 7px;
@@ -73,15 +78,14 @@ tr:nth-child(odd) {
 th {
     background-color: rgb(117, 185, 15);
 }
-th.done {
-    width: 20px;
+th.medication {
+    width: 45%;
 }
-th.task {
-    width: 8
-    0px;
+th.dose {
+    width: 25%;
 }
-th.delete {
-    width: 20px;
+th.startDate {
+    width: 20%;
 }
 ul {
     list-style: none;
@@ -130,15 +134,6 @@ ul a {
 }
 /* ******************* */
 
-.btn-addMed {
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 7px; /* why isn't the radius working? */
-    /* margin-left: 38px; */
-    margin-top: 10px;
-    padding: 2px;
-}
-
 .margin-zero {
     margin: 0px;
 }
@@ -167,14 +162,18 @@ ul a {
     border-right-width: 5px;    
 }
 
-/* #btn-addItem {
-    border-radius: 7px;
-    margin-left: 38px;
-    margin-top: 3px;
+#btn-addMed {
+    background-color: slategray;
+    color: white;
+    display: inline-block;
+    margin: 5px;
     padding: 2px;
-} */
+    text-decoration: none;
+    width: 110px;
+    border-radius: 5px;
+}
 
-#form-newTask {
+#form-newMed {
     padding: 0px;
     margin: 0px;
 }
@@ -183,7 +182,7 @@ ul a {
     width: 150px;
 }
 
-#todo-table {
+#medList-table {
     border-collapse: collapse;
     width: 100%;
     color: black;
