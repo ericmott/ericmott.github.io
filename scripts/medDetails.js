@@ -23,8 +23,6 @@ document.querySelector('#btn-deleteItem').addEventListener('click', deleteItem);
 fillValues();
 
 function saveItem() {
-    console.log("in saveItem function");
-
     if (document.getElementById('medication').value == '') {
         console.log("Can't save an empty medication!");
         alert("You must have a medication name!")
@@ -53,6 +51,7 @@ function saveItem() {
 
 function projHome() {
     window.location.href = "finalProject.html"; // returns back to project home
+    // window.location.href = "./finalProject.html"; // returns back to project home
 }
 
 /* delete task */
@@ -68,12 +67,15 @@ function deleteItem() {
         medications.splice(pos, 1);
     
         /* save to local storage */
+        console.log("going to saveMedications in deleteItem");
         saveMedications(medications);
     
         /* return to the project homepage */
+        console.log("at the end of delete going home?");
         projHome();
+    }else{
+        window.location.href = "medDetails.html";
     }
-    window.location.href = "medDetails.html";
 }
 // function deleteItem() {
 //     console.log(pos);
@@ -145,8 +147,4 @@ function fillValues() {
     document.getElementById("docZip").value = medications[pos].docZip;
     document.getElementById("docPhone").value = medications[pos].docPhone;
     document.getElementById("medUsage").value = medications[pos].medUsage;
-}
-
-function confirmDelete() {
-    
 }

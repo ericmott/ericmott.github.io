@@ -34,7 +34,7 @@ th.startDate {
     border: none;
 }
 
-#btn-addItem, #btn-clearForm, #btn-projHome, #btn-addMed {
+#btn-addItem, #btn-clearForm, #btn-projHome, #btn-addMed, #btn-saveItem, #btn-deleteItem {
     border-radius: 7px;
     margin-left: 5px;
     margin-top: 3px;
