@@ -1,0 +1,61 @@
+
+th.medication {
+    width: 45%;
+}
+th.dose {
+    width: 25%;
+}
+th.startDate {
+    width: 20%;
+}
+
+.btn-addMed {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-left: 38px; */
+    margin-top: 10px;
+    /* padding: 2px; */
+    border-radius: 5px;
+}
+
+.btn-newMed {
+    background-color: slategray;
+    color: white;
+    display: inline-block;
+    margin: 5px;
+    /* padding: 4px; */
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-decoration: none;
+    /* width: 110px; */
+    border-radius: 5px;
+    border: none;
+}
+
+#btn-addItem, #btn-clearForm, #btn-projHome, #btn-addMed {
+    border-radius: 7px;
+    margin-left: 5px;
+    margin-top: 3px;
+    /* padding: 4px; */
+}
+
+#form-newMed {
+    padding: 0px;
+    margin: 0px;
+}
+
+#new-task-divs {
+    width: 150px;
+}
+
+#medList-table {
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+}
+
+@media screen and (max-width: 430px){
+    
+}

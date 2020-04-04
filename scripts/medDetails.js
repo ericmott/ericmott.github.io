@@ -27,6 +27,7 @@ function saveItem() {
 
     if (document.getElementById('medication').value == '') {
         console.log("Can't save an empty medication!");
+        alert("You must have a medication name!")
         return;
     }
 
@@ -57,21 +58,40 @@ function projHome() {
 /* delete task */
 function deleteItem() {
     console.log(pos);
-    // let pos = medications.indexOf(medication);
-
-    if (pos < 0) {
-        return;
+    if(confirm("Delete " + document.getElementById("medication").value)) {
+        // let pos = medications.indexOf(medication);
+        if (pos < 0) {
+            return;
+        }
+    
+        /* removes selected item from todo string */
+        medications.splice(pos, 1);
+    
+        /* save to local storage */
+        saveMedications(medications);
+    
+        /* return to the project homepage */
+        projHome();
     }
-
-    /* removes selected item from todo string */
-    medications.splice(pos, 1);
-
-    /* save to local storage */
-    saveMedications(medications);
-
-    /* return to the project homepage */
-    projHome();
+    window.location.href = "medDetails.html";
 }
+// function deleteItem() {
+//     console.log(pos);
+//     // let pos = medications.indexOf(medication);
+
+//     if (pos < 0) {
+//         return;
+//     }
+
+//     /* removes selected item from todo string */
+//     medications.splice(pos, 1);
+
+//     /* save to local storage */
+//     saveMedications(medications);
+
+//     /* return to the project homepage */
+//     projHome();
+// }
 
 function loadMedication() {
 
@@ -125,4 +145,8 @@ function fillValues() {
     document.getElementById("docZip").value = medications[pos].docZip;
     document.getElementById("docPhone").value = medications[pos].docPhone;
     document.getElementById("medUsage").value = medications[pos].medUsage;
+}
+
+function confirmDelete() {
+    
 }
